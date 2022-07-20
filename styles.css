@@ -1,0 +1,245 @@
+*{
+    font-family: Avenir-Next, sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    letter-spacing: 0.7px;
+}
+.top > div {
+  display: flex;
+  align-items: center;
+}
+.top {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: rgb(247, 245, 245);
+  margin-top: -10px;
+  font-size: 14px;
+  color: rgb(75, 74, 74);
+}
+.star > img {
+  width: 40px;
+}
+.NNNOW {
+  width: 120px;
+}
+.NNNOW > img {
+  width: 100%;
+}
+.NNNOW::after,
+.top > div:nth-child(6):after,
+.top > div:nth-child(7):after {
+  content: "|";
+  position: relative;
+  left: 25px;
+  font-size: 20px;
+  color: rgb(190, 186, 186);
+}
+.top > div:nth-child(2) > img {
+  width: 10px;
+  height: 15px;
+}
+.icon_p > img{
+  margin-right: 10px;
+  width: 18px;
+  height: 18px;
+}
+.discount {
+  width: 350px;
+  text-align: center;
+}
+.grid1{
+    display: grid;
+    width:80%;
+    margin: auto;
+    margin-top: 120px;
+    margin-right: 150px;
+    grid-template-columns: repeat(6,1fr);
+    gap:20px;
+}
+.grid1>img, .grid3>img{
+    display:block;
+    width:100%;
+}
+.landed, .lazy, .sale {
+    margin-top: 50px;
+    margin: auto;
+    margin-top: 70px;
+}
+.pass{
+    width:90%;
+    margin: auto;
+    margin-top: 50px;
+}
+.fav_brands, .new, .diaries{
+    margin-top: 30px;
+}
+.landed>img, .lazy>img, .pass>img, .sale>img, .fav_brands>img{
+    width:100%;
+}
+.carousel{
+    display: grid;
+    margin: auto;
+    width:95%;
+    justify-content: space-between;
+    grid-template-columns: repeat(2,1fr);
+    border:1px solid black;
+}
+.left{
+    border:1px solid black;
+}
+.youtube{
+    display: flex;
+    justify-content: flex-end;
+    border:1px solid black;
+}
+.grid2{
+    display: grid;
+    width:90%;
+    margin: auto;
+    margin-top: 20px;
+    grid-template-columns: repeat(3,1fr);
+    gap:25px;
+}
+.grid2>img, .new>img, .grid4>img, .diaries>img, .grid5>div>img{
+    display:block;
+    width:100%;
+}
+.grid3{
+    display: grid;
+    width:80%;
+    margin: auto;
+    margin-top: 15px;
+    grid-template-columns: repeat(6,1fr);
+    gap:20px;
+}
+.grid4{
+    width: 85%;
+    margin:auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap:20px;
+}
+.grid5{
+    width:90%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+}
+.grid5>div>h2, .grid5>div>h2+p{
+    padding-left: 5px;
+    margin-bottom: -10px;
+}
+#toTop{
+    margin: auto;
+    width:15%;
+    text-align: center;
+    font-weight:600;
+    margin-top: 100px;
+    padding:7px 15px;
+    background-color: #abc72c;
+}
+.subscribe{
+  background-color: rgb(228, 228, 222);
+  padding-top: 50px;
+  padding-bottom: 5px;
+}
+.subscribe>h2{
+  margin: auto;
+  text-align: center;
+}
+.subscribe>div{
+  width:40%;
+  margin: auto;
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-start;
+}
+.subscribe input[type="text"]{
+  width:70%;
+  padding:15px 20px;
+  border:none;
+  font-size: 20px;
+}
+.subscribe input[type="submit"]{
+  width: 30%;
+  padding:15px;
+  background-color: black;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+.bottom-texts{
+  text-align: center;
+  width:90%;
+  margin: auto;
+  color: #656565;
+}
+.bottom-texts>p:nth-child(1){
+  font-size: 14px;
+  font-weight: bolder;  
+  letter-spacing: 2px;
+  margin-top: 60px;
+}
+.bottom-texts>p:nth-child(2), .bottom-texts>p:nth-child(4){
+  font-size: 12px;
+  line-height: 1.7;
+}
+.bottom-texts>p:nth-child(3), .bottom-texts>p:nth-child(5){
+  font-size: 16px;
+  font-weight: bold;
+}
+.bottom-texts>p:nth-child(5)~p{
+  font-size: 12px;
+  line-height: 1.7;
+}
+.socialmedia{
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  gap:40px;
+}
+.socialLogo{
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: auto;
+}
+.socialLogo>img{
+  width: 2%;
+}
+.privacy{
+  margin: auto;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  text-align: center;
+  color: #656565;
+  font-size: 13px;
+  line-height: 1.7;
+}
+.privacy~h4{
+  text-align: center;
+  margin-top: 10px;
+}
+.brands{
+  display: flex;
+  text-align: center;
+  margin: auto;
+  justify-content: center;
+  /* gap:20px; */
+  width: 90%;
+  cursor: pointer;
+  font-size: .77778rem;
+  line-height: 30px;
+  color: #000;
+  margin-top: -30px;
+  position: relative;
+}
+.brands>p::after{
+  content: "|";
+  position: relative;
+  left: 8px;
+  margin-right: 12px;
+  font-size: 18px;
+  color: #000;
+}

@@ -1,0 +1,67 @@
+.nav1{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width:95%;
+    margin:auto;
+    font-size: 14px;
+    color: rgb(75, 74, 74);
+}
+.search>img{
+    margin-left: 10px;
+    width:8%;
+}
+.search{
+	width: 230px;
+	height: auto;
+    border-bottom: 1px solid gray;
+	display: flex;
+    justify-content: space-between;
+	align-items: center;
+}
+.search > input{
+	height: 40px;
+	border: none;
+	outline: none;
+	font-size: 14px;
+}
+.logo{
+    margin-left: 110px;
+}
+.logo>img{
+    width:55%;
+}
+.account{
+    display: flex;
+    align-items: center;
+    gap:20px;
+
+}
+.account img {
+    margin-right: 10px;
+    width: 16px;
+    height: 16px;
+}
+.account>div:first-child::after,
+.account>div:nth-child(2)::after {
+  content: "|";
+  position: relative;
+  left: 5px;
+  font-size: 20px;
+  color: rgb(190, 186, 186);
+}
+.person{
+    display: flex;
+    align-items: center;
+}
+.nav2{
+    width:95%;
+    margin: auto;
+    display: flex;
+    font-size: 15px;
+    margin-top: -10px;
+    justify-content: space-evenly;
+    border-bottom: 1px solid rgb(207, 207, 207);
+}
+
+

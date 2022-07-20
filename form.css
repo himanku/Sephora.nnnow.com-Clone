@@ -1,0 +1,68 @@
+
+.bg-modal1, .bg-modal2{
+    width:100%;
+    height:100%;
+    position: fixed;
+    top: 0;
+    background-color: rgba(0,0,0,0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+.modal-content1, .modal-content2{
+    width: 35%;
+    background-color: white;
+    border-radius: 4px;
+    position: relative;
+}
+.close1, .close2{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 30px;
+    transform: rotate(45deg);
+}
+
+.form1>h2{
+    text-align: center;
+}
+.form1{
+    margin:auto;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, Helvetica, sans-serif;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 10px 50px;
+    border-radius: 10px;
+}
+.form1>input[type="text"], .form1>input[type="number"], .form1>input[type="password"],
+.form1>select,
+.form1>textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 25px;
+    resize: vertical;
+}
+.form1>input[type="submit"] {
+    background-color: #f39;
+    color: white;
+    font-weight: bold;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    font-size: 20px;
+    margin-top: 25px;
+    margin-bottom: 30px;
+    
+}
+.form1>::placeholder{
+    color: #ccc;
+    font-size: 16px;
+}
