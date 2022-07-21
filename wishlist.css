@@ -1,0 +1,9 @@
+.my-fav{
+    height:80px;
+    display: flex;
+    margin: auto;
+    background: linear-gradient(180deg,#229de3,#249ee3,#27a0e4,#29a1e4,#2ba2e4);
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+}

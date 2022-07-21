@@ -17,7 +17,7 @@ document.querySelector(".form1").addEventListener("submit", signUp);
     //window.location.href="login.html";
     alert("Sign Up Successful");
     document.querySelector(".bg-modal2").style.display="flex";
-    document.querySelector(".bg-modal1").style.display="none";
+    document.querySelector(".bg-modal1").style.opacity="0";
 }
 
 document.querySelector(".person").addEventListener("click", function(){
@@ -26,3 +26,4 @@ document.querySelector(".person").addEventListener("click", function(){
 document.querySelector(".close1").addEventListener("click", function(){
     document.querySelector(".bg-modal1").style.display="none";
 });
+

@@ -1,0 +1,93 @@
+.mega-box{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    padding: 0 30px;
+    top: 200px;
+    font-size: 12px;
+    visibility: hidden;
+  }
+  .mega-box .content{
+    background: white;
+    padding: 25px 20px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    box-shadow: 0 6px 10px rgba(0,0,0,0.15);
+  }
+  .mega-links{
+    list-style: none;
+    margin-left: -40px;
+  }
+  .row .mega-links li:hover{
+    color: #f39;
+  }
+  .row>header{
+    font-size: 14px;
+    font-weight: bolder;
+  }
+  .row>header:hover{
+    color:#f39
+  }
+  .nav2>div{
+    padding: 0px 10px;
+  }
+  .nav2>div>h4:hover{
+    color: #f39;
+  }
+  .nav2>div:not(:first-child):hover{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  }
+  .nav2 div:hover .drop-menu,
+  .nav2 div:hover .mega-box{
+    transition: all 0.3s ease;
+    opacity: 1;
+    visibility: visible;
+    position: absolute;
+    top: 55px;
+  } 
+
+  .wish-cart{
+    width:100%;
+    height:120px;
+    display: flex;
+    gap: 10px;
+    color: white;
+    background-color:rgba(0, 255, 255, 0.788);
+    font-weight: bold;
+    padding: 30px 15px 0px 10px;
+    text-align: center;
+    position: absolute;
+    left:200px;
+    top:100px;
+    z-index: 10;
+    opacity: 0;
+    
+  }
+  .wish-cart>div{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .wish-cart img{
+    width:30%;
+    display: block;
+  }
+  .wish-cart:hover{
+    width:100%;
+    height:120px;
+    display: flex;
+    gap: 10px;
+    color: white;
+    background-color:rgba(0, 255, 255, 0.788);
+    font-weight: bold;
+    padding: 30px 15px 0px 10px;
+    text-align: center;
+    position: absolute;
+    left:200px;
+    top:100px;
+    z-index: 10;
+    opacity: 1;
+    transition: all 0.3s ease;
+  }

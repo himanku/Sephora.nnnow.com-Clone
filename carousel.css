@@ -66,6 +66,15 @@
     z-index: 1;
   }
   span:nth-of-type(2){
-    left:98%;
+    left:95%;
   }
-  
+  /* small one */
+
+  .carousel_body1{
+    display: flex;
+    font-size: 12px;
+  }
+  .product-card1{
+    width:30%;
+    margin-right: 20px;
+  }
