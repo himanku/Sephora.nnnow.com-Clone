@@ -7,6 +7,9 @@
     font-size: 14px;
     color: rgb(75, 74, 74);
 }
+.nav1>div{
+    cursor: pointer;
+}
 .search>img{
     margin-left: 10px;
     width:8%;
@@ -60,8 +63,12 @@
     display: flex;
     font-size: 15px;
     margin-top: -10px;
+    position: sticky;
+    top:0 ;
     justify-content: space-evenly;
+    background-color: white;
     border-bottom: 1px solid rgb(207, 207, 207);
+    z-index: 20;
 }
 
 

@@ -9,6 +9,7 @@
     justify-content: center;
     align-items: center;
     display: none;
+    z-index:30;
 }
 .modal-content1, .modal-content2{
     width: 35%;
@@ -22,12 +23,13 @@
     right: 10px;
     font-size: 30px;
     transform: rotate(45deg);
+    cursor: pointer;
 }
 
-.form1>h2{
+.form1>h2, .form2>h2{
     text-align: center;
 }
-.form1{
+.form1, .form2{
     margin:auto;
     display: flex;
     flex-direction: column;
@@ -38,7 +40,10 @@
 }
 .form1>input[type="text"], .form1>input[type="number"], .form1>input[type="password"],
 .form1>select,
-.form1>textarea {
+.form1>textarea,
+.form2>input[type="text"], .form2>input[type="number"], .form2>input[type="password"],
+.form2>select,
+.form2>textarea  {
     width: 100%;
     padding: 12px;
     border: 1px solid #ccc;
@@ -48,7 +53,7 @@
     margin-bottom: 25px;
     resize: vertical;
 }
-.form1>input[type="submit"] {
+.form1>input[type="submit"], .form2>input[type="submit"] {
     background-color: #f39;
     color: white;
     font-weight: bold;
@@ -60,9 +65,8 @@
     font-size: 20px;
     margin-top: 25px;
     margin-bottom: 30px;
-    
 }
-.form1>::placeholder{
+.form1>::placeholder, .form2>::placeholder{
     color: #ccc;
     font-size: 16px;
 }
