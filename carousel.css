@@ -2,32 +2,30 @@
     width: 15%;
     font-size: 14px;
   }
-  .product-image, .product-image>img {
+  .product-image, .product-image>img, .product-image1, .product-image1>img{
     width: 100%;
   }
-  .product-info {
+  .product-info, .product-info1 {
     width: 80%;
     margin:auto;
     line-height: 1em;
     text-align: center;
   }
-  .bestseller{
-    display:flex;
-    height:30px;
-    justify-content: space-evenly;
-  }
-  .bestseller>h4{
+  .bestseller>h4, .bestseller1>h4{
     margin-top: 2px;
+    margin-bottom: 5px;
     color: rgb(213, 0, 50);
   }
-  .bestseller>img{
+  .bestseller>img, .bestseller1>img{
     height:20px
   }
-  .product-short-description {
+  .product-short-description, .product-short-description1 {
     width: 100%;
+    margin-top:1px;
   }
-  .carousel_body{
+  .carousel_body, .carousel_body1{
     width:90%;
+    height:500px;
     margin:auto;
     margin-top: 40px;
     display: flex;
@@ -36,16 +34,18 @@
     overflow-x: auto;
     overflow: hidden;
   }
-  .carousel_body>div{
+  .carousel_body>div, .carousel_body1>div{
     min-width:15%;
     position: relative;
     left: 0;
     transition: 0.3s;
   }
-  .price{
+  .price, .price1{
+    margin-top:-10px;
     font-weight: bolder;
   }
-  .offer{
+  .offer, .offer1{
+    margin-top:-10px;
     color:rgb(75, 75, 75);
     font-size: 12px;
   }
@@ -75,6 +75,12 @@
     font-size: 12px;
   }
   .product-card1{
-    width:30%;
+    width:40%;
     margin-right: 20px;
+  }
+  .product-brand1{
+    margin-top: 0px;
+  }
+  .bestseller1+h4, .bestseller1+h4~p{
+    margin-top: -5px;
   }
