@@ -1,0 +1,102 @@
+*{
+    font-family: Avenir-Next, sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    letter-spacing: 0.7px;
+}
+.my-bag{
+    height:50px;
+    display: flex;
+    margin: auto;
+    background: linear-gradient(180deg,#229de3,#249ee3,#27a0e4,#29a1e4,#2ba2e4);
+    color: #fff;
+    align-items: center;
+}
+.my-bag>h3{
+    margin-left: 55px;
+}
+.sephora{
+    margin-top: -10px;;
+}
+.sephora>img{
+    display: block;
+    width:9%;
+    margin-left: 55px;
+}
+.main{
+    width:90%;
+    margin: auto;
+    display: flex;
+    gap:20px;
+    margin-top: 20px;
+}
+.main-left{
+    width:65%;
+    border:1px solid black;
+}
+.main-right{
+    width:35%;
+}
+.promo{
+    width:100%;
+    display: flex;
+    justify-content:center;
+    gap:5px;
+    background-color: #f2f2f2;
+}
+.promo>img{
+    width:6%;
+    height:50%;
+    margin-top: 20px;
+}
+.bill{
+    padding:25px;
+    width:97%;
+    margin: auto;
+    font-size: 14px;
+    margin-top: 40px;
+    background-color: #f2f2f2;
+}
+.sub-total, .discount, .delivery, .GST, .total{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+.discount{
+    color:#f39;
+}
+.delivery{
+    border-bottom: 1px solid black;
+    padding-bottom: 15px;
+}
+.total{
+    font-size: 15px;
+    font-weight: bolder;
+}
+.checkout{
+    width:97%;
+    background-color: #f39;
+    color:white;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 20px;
+}
+.shop-more{
+    width:97%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    margin-top: 20px;
+    border:2px solid black;
+}
+.ad{
+    width:97%;
+    margin: auto;
+    margin-top: 20px;
+}
+.ad>img{
+    width:100%;
+}

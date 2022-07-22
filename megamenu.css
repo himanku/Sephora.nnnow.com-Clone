@@ -10,9 +10,11 @@
   .mega-box .content{
     background: white;
     padding: 25px 20px;
-    display: flex;
+    display: grid;
     width: 100%;
-    justify-content: space-between;
+    grid-template-columns: repeat(5, 1fr);
+    margin: auto;
+    justify-content: space-around;
     box-shadow: 0 6px 10px rgba(0,0,0,0.15);
   }
   .mega-links{

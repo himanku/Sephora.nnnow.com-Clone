@@ -7,3 +7,65 @@
     justify-content: center;
     align-items: center;
 }
+.carousel_body button{
+    border:none;
+    background-color: white;
+    color:rgb(213, 0, 50);
+    cursor: pointer;
+}
+
+
+
+.product-card {
+    width: 15%;
+    font-size: 14px;
+  }
+  .product-image, .product-image>img{
+    width: 100%;
+  }
+  .product-info {
+    width: 80%;
+    margin:auto;
+    line-height: 1em;
+    text-align: center;
+  }
+  .bestseller>h4{
+    margin-top: 2px;
+    margin-bottom: 5px;
+    color: rgb(213, 0, 50);
+  }
+  .bestseller>img{
+    height:20px
+  }
+  .product-short-description{
+    width: 100%;
+    margin-top:1px;
+  }
+  .carousel_body{
+    width:90%;
+    height:500px;
+    margin:auto;
+    margin-top: 40px;
+    display: flex;
+    gap: 20px;
+    overflow-x: auto;
+    overflow: hidden;
+  }
+  .carousel_body>div{
+    min-width:15%;
+    position: relative;
+    left: 0;
+    transition: 0.3s;
+  }
+  .price{
+    margin-top:-10px;
+    font-weight: bolder;
+  }
+  .offer{
+    margin-top:-10px;
+    color:rgb(75, 75, 75);
+    font-size: 12px;
+  }
+  .bestseller+h4, .bestseller+h4~p{
+    margin-top: -8px;
+  }
