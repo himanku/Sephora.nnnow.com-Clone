@@ -1,6 +1,5 @@
 document.querySelector(".form1").addEventListener("submit", signUp);
     let arr=JSON.parse(localStorage.getItem("data")) || [];
-    
     function signUp(event){
         event.preventDefault();
         let obj={
@@ -14,7 +13,6 @@ document.querySelector(".form1").addEventListener("submit", signUp);
     }
     arr.push(obj);
     localStorage.setItem("data",JSON.stringify(arr));
-    //window.location.href="login.html";
     alert("Sign Up Successful");
     document.querySelector(".bg-modal2").style.display="flex";
     document.querySelector(".bg-modal1").style.opacity="0";

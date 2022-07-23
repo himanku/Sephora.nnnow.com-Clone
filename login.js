@@ -1,6 +1,6 @@
 document.querySelector(".form2").addEventListener("submit", logIn);
-// let loginName=JSON.parse(localStorage.getItem("email")) || "login";
-// document.querySelector(".login-name").innerHTML=loginName;
+let loginName=localStorage.getItem("Email") || "Login";
+document.querySelector(".login-name").innerHTML=loginName;
     function logIn(event){
         event.preventDefault();
         let email=document.querySelector("#mail").value;
@@ -9,11 +9,12 @@ document.querySelector(".form2").addEventListener("submit", logIn);
         console.log(user);
         for(let i=0;i<=user.length-1;i++){
             if(email==user[i].Email && pass==user[i].Pass){
-            localStorage.setItem("email",email);
-            document.querySelector(".login-name").innerHTML=email;
-            alert("Successfully Logged In");
+            localStorage.setItem("Email", user[i].Email);
+            document.querySelector(".login-name").innerHTML=loginName;
             document.querySelector(".bg-modal2").style.display="none";
             document.querySelector(".bg-modal1").style.display="none";
+            alert("Successfully Logged In");
+            location.reload();
             return;
         } 
      }
@@ -22,4 +23,5 @@ document.querySelector(".form2").addEventListener("submit", logIn);
 
  document.querySelector(".close2").addEventListener("click", function(){
     document.querySelector(".bg-modal2").style.display="none";
+    document.querySelector(".bg-modal1").style.display="none";
 });
