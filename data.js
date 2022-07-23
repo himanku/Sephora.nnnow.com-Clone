@@ -150,6 +150,4 @@ var ProductData = [
         fav: "FAVOURITE",
         unique: 11,
       },
-      
- 
     ];

@@ -1,7 +1,6 @@
 display(ProductData);
 
   function display(ProductData){
-     //document.querySelector(".product-card").innerHTML="";
     ProductData.forEach(function(elem){
     let el1 = document.createElement("div");
     el1.classList.add("cart-icon");
@@ -62,7 +61,20 @@ display(ProductData);
 }
 
 let cartLS=JSON.parse(localStorage.getItem("cart-page")) || [];
-    function addToWishlist(product){
+  
+  function addToWishlist(product){
+    for(let i=0;i<cartLS.length;i++){
+      if(cartLS[i].unique===product.unique){
+        alert("Product already in cart");
+        return;
+      }
+    }
+    cartLS.push(product);
+    alert("Product added successfully");
+    localStorage.setItem("cart-page",JSON.stringify(cartLS));
+  }
+
+  function addToCart(product){
     for(let i=0;i<cartLS.length;i++){
       if(cartLS[i].unique===product.unique){
         alert("Product already in cart");

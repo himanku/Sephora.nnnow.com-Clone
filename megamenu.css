@@ -64,7 +64,6 @@
     top:100px;
     z-index: 10;
     opacity: 0;
-    
   }
   .wish-cart>div{
     display:flex;
@@ -92,4 +91,7 @@
     z-index: 10;
     opacity: 1;
     transition: all 0.3s ease;
+  }
+  .cart-icon, .wish-icon{
+    cursor: pointer;
   }

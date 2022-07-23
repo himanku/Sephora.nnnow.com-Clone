@@ -227,7 +227,6 @@
   text-align: center;
   margin: auto;
   justify-content: center;
-  /* gap:20px; */
   width: 90%;
   cursor: pointer;
   font-size: .77778rem;
@@ -243,4 +242,7 @@
   margin-right: 12px;
   font-size: 18px;
   color: #000;
+}
+.brands>p:hover, .socialmedia>h4:hover{
+  color:#f39;
 }

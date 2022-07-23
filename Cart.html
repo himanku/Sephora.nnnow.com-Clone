@@ -6,17 +6,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Cart</title>
     <link rel="stylesheet" href="cart.css">
-    <!-- <link rel="stylesheet" href="styles.css"> -->
 </head>
 <body>
     <div class="sephora">
-        <img src="https://cdn07.nnnow.com/web-images/master/navtree_metaData/59b2657be4b0e6b6e16a9180/1548053082431/se.png" alt="">
+        <a href="index.html"><img src="https://cdn07.nnnow.com/web-images/master/navtree_metaData/59b2657be4b0e6b6e16a9180/1548053082431/se.png" alt=""></a>
     </div>
     <div class="my-bag">
-        <h3>MY BAG (<span>0</span>)</h3>
+        <h3>MY BAG (<span class="total-items">0</span>)</h3>
     </div>
     <div class="main">
-        <div class="main-left"></div>
+        <div class="main-left">
+            <div class="added-product">
+            </div>
+        </div>
         <div class="main-right">
             <div class="promo">
                 <img src="https://static.nnnow.com/client/assets/images/promotions/icon_promo.png" alt="">
@@ -42,7 +44,7 @@
                 </div>
                 <div class="total">
                     <span>Total</span>
-                    <span>0</span>
+                    <span class="cart-total">0</span>
                 </div>
                 
             </div>
@@ -50,7 +52,7 @@
                 <h3>CHECKOUT</h3>
             </div>
             <div class="shop-more">
-                <h3>SHOP MORE</h3>
+                <a href="index.html"><h3>SHOP MORE</h3></a>
             </div>
             <div class="ad">
                 <img src="https://static.nnnow.com/mybag_offer_banner.jpg" alt="">
@@ -59,3 +61,5 @@
     </div>
 </body>
 </html>
+<script src="data.js"></script>
+<script src="cart.js"></script>

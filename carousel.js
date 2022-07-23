@@ -23,7 +23,6 @@ span[1].onclick=()=>{
     }
 }
 
-
 span[0].onclick=()=>{
     l--;
     for(let i of div){
